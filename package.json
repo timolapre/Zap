@@ -1,0 +1,40 @@
+{
+    "name": "Zap",
+    "version": "1.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "yarn run compile && yarn mocha --exit --timeout 10000",
+        "test:ci": "yarn run compile && yarn mocha --exit --timeout 30000",
+        "compile": "truffle compile",
+        "compile:all": "truffle compile --all"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "GPL-3.0-only",
+    "resolutions": {
+        "async": "^2.6.4",
+        "lodash": "^4.17.21",
+        "node-fetch": "^2.6.7",
+        "underscore": "^1.12.1",
+        "yargs-parser": "^5.0.1"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.6.0",
+        "@truffle/hdwallet-provider": "^2.0.8",
+        "dotenv": "^16.0.1"
+    },
+    "devDependencies": {
+        "@openzeppelin/test-environment": "^0.1.9",
+        "@openzeppelin/test-helpers": "^0.5.15",
+        "chai": "^4.3.6",
+        "chai-bn": "^0.3.1",
+        "mocha": "^10.0.0",
+        "prettier": "^2.6.2",
+        "prettier-plugin-solidity": "^1.0.0-beta.19",
+        "solidity-coverage": "^0.7.21",
+        "truffle": "^5.5.15",
+        "truffle-contract-size": "^2.0.1",
+        "truffle-plugin-verify": "^0.5.25"
+    }
+}
